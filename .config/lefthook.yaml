@@ -5,7 +5,7 @@ prepare-commit-msg:
   commands:
     commitzen:
       interactive: true
-      run: yarn run cz --hook # Or npx cz --hook
+      run: npx run cz --hook # Or npx cz --hook
       env:
         LEFTHOOK: 0
 
@@ -13,4 +13,4 @@ prepare-commit-msg:
 commit-msg:
   commands:
     "lint commit message":
-      run: yarn run commitlint --edit {1}
+      run: npx run commitlint --edit {1}
