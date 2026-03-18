@@ -1,4 +1,5 @@
 import { SocialPlatform } from "../interfaces/social-plataform";
+import { LogFactory } from "../factories/log-factory";
 
 export abstract class SocialShareManager {
   // THE FACTORY METHOD
@@ -10,6 +11,8 @@ export abstract class SocialShareManager {
     const result = platform.share(content);
 
     console.log("Notification Process Started...");
+    const logger = LogFactory.createLogger(platform.getName());
+    logger?.log();
     console.log(result);
     console.log("Notification Process Finished.\n");
     return result;

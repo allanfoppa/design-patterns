@@ -2,4 +2,5 @@
 // Define how every social network should behave.
 export interface SocialPlatform {
   share(content: string): string;
+  getName(): string;
 }

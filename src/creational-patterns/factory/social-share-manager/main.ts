@@ -1,7 +1,7 @@
 import { SocialShareManager } from "./managers/social-share-manager";
-import { InstagramManager } from "./managers/implementations/instagram-manager";
-import { WhatsappManager } from "./managers/implementations/whatsapp-manager";
-import { ThreadsManager } from "./managers/implementations/threads-manager";
+import { InstagramManager } from "./features/instagram/instagram-manager";
+import { WhatsAppManager } from "./features/whatsapp/whatsapp-manager";
+import { ThreadsManager } from "./features/threads/threads-manager";
 
 function runSharing(manager: SocialShareManager) {
   manager.notify("Check out my new design patterns project!");
@@ -11,8 +11,8 @@ function runSharing(manager: SocialShareManager) {
 console.log("User selected Instagram:");
 runSharing(new InstagramManager());
 
-console.log("User selected Whatsapp:");
-runSharing(new WhatsappManager());
+console.log("User selected WhatsApp:");
+runSharing(new WhatsAppManager());
 
 console.log("User selected Threads:");
 runSharing(new ThreadsManager());
