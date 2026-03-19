@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "cz",
     "creational:social-share-manager": "tsx src/creational-patterns/factory/social-share-manager/main.ts",
-    "structural:payment-processor": "tsx src/structural-patterns/adapter/payment-processor/main.ts"
+    "structural:payment-processor": "tsx src/structural-patterns/adapter/payment-processor/main.ts",
+    "structural:order-beverage": "tsx src/structural-patterns/decorator/order-beverage/main.ts"
   },
   "packageManager": "pnpm@10.28.2",
   "pnpm": {
